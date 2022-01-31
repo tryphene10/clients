@@ -1,10 +1,12 @@
-import './style/navbar.scss';
-
+import Navbar from './Navbar';
+import './style/navbar.css';
+import Landing from './subModal/Landing';
 const Home = ()=>{
 
     return (
         <>
-        <div className='hero'>
+        <Navbar />
+       {/*  <div className='hero'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-7'>
@@ -20,7 +22,8 @@ const Home = ()=>{
                     </div>
                </div>
             </div>
-        </div>
+        </div> */}
+        <Landing />
         </>
     )
 }

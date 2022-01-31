@@ -32,7 +32,7 @@ const login = ()=>{
 
 				</form>
 
-				<p>Already have an accout? <NavLink to="/register">Sign In</NavLink></p>
+				<p>Already have an accout? <NavLink to="/signup/planform">Sign In</NavLink></p>
 
 				</div>
 
