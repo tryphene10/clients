@@ -1,8 +1,16 @@
 import react from 'react';
 import './login.scss'
 import lo from '../../img/logo2.png';
-import { NavLink } from 'react-router-dom';
-const login = ()=>{
+import { NavLink ,useNavigate } from 'react-router-dom';
+const Login = ()=>{
+	let Navigate = useNavigate()
+
+ /* function redirectToSignUp(){
+		 history.push("/signup/planform");
+	} */
+	const confirm = (e) => {
+		Navigate("/signup/planform")
+	}
 
     return(
         <>
@@ -32,7 +40,7 @@ const login = ()=>{
 
 				</form>
 
-				<p>Already have an accout? <NavLink to="/signup/planform">Sign In</NavLink></p>
+				<p>Already have an accout? <button onClick={confirm} >Sign In</button></p>
 
 				</div>
 
@@ -41,6 +49,6 @@ const login = ()=>{
         </>
     )
 }
-export default login;
+export default Login;
 
 

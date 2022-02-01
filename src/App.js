@@ -3,6 +3,7 @@ import 'bootstrap/scss/bootstrap.scss'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Login from './pages/login/Login'
 import FirstStep from './pages/registration/FirstStep'
+import Secondstep from './pages/registration/Secondstep';
 import Home from "./components/Home";
 const App = ()=>{
 
@@ -17,7 +18,7 @@ const App = ()=>{
                    
                 <Route path="/signup/planform" element={<FirstStep/>} />
                     
-                <Route path="/signup/regform" element={<FirstStep/>} />
+                <Route path="/signup/princing" element={<Secondstep/>} />
                 
             </Routes>
 

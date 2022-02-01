@@ -1,11 +1,10 @@
 import react from 'react'; 
 import './style/navbar.css';
 import logo from '../img/logo.png';
-import {NavLink} from 'react-router-dom';
+import {NavLink, useNavigate} from 'react-router-dom';
 
 const Navbar = ()=>{
-
-
+    
     return(
         <>
         <nav className="navbar navbar-dark bg-dark">
@@ -25,27 +24,7 @@ const Navbar = ()=>{
             {/* </div> */}
         </div>
         </nav>
-        <div className="bg-img">
-            <div className="layer">
-                <div className="row">
-                <div className="col-md-12 text-center">
-                    <h1>Unlimited movies, TV <br />shows and more.</h1>
-                    <h3>Watch anywhere. Cancel anytime.</h3>
-                    <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
-                </div>
-                </div>
-                <div className="row w-100">
-                <div className="col-md-2 col-1"></div>
-                <div className="col-md-8 col-10 p-0 main-search">
-                    <div className="input-group mb-3">
-                    <input type="text" className="form-control" placeholder="Email address"/>
-                    <span className="input-group-text" id="basic-addon2">Get Started <i className="bi bi-chevron-right text-white"></i></span>
-                    </div>
-                </div>
-                <div className="col-md-2 col-1"></div>
-                </div>
-            </div>
-    </div>
+        
         </>
     )
 }
